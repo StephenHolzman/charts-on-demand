@@ -4,6 +4,7 @@
 // window from here.
 
 var app = require('app');
+
 var BrowserWindow = require('browser-window');
 var env = require('./vendor/electron_boilerplate/env_config');
 var devHelper = require('./vendor/electron_boilerplate/dev_helper');
