@@ -1,18 +1,7 @@
-electron-angular-boilerplate
+Charts-On-Demand
 ============================
 
-This shows how to use Angular + Angular Material + Jade with [Electron runtime](http://electron.atom.io).
-This is a fork from https://github.com/szwacz/electron-boilerplate.
-
-Check the original [README](https://github.com/szwacz/electron-boilerplate/blob/master/README.md) from electron-boilerplate for more details.
-
-## Howto
-
-    # Install
-    npm install
-
-    # Start
-    npm start
+Electron app. This is an experimental project aiming to assist me in creating interactive D3 charts from templates for my blog chartsoncharts.com. Also to pick up Angular and Electron stuff along the way.
 
 # License
 
