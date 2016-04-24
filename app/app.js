@@ -33,7 +33,7 @@ app.config(['$routeProvider', function($routeProvider) {
 }]);
 
 app.config(function($mdThemingProvider) {
-  $mdThemingProvider.definePalette('amazingPaletteName', {
+  $mdThemingProvider.definePalette('charts-on-demand', {
     '50': '333333',
     '100': '333333',
     '200': 'ef9a9a',
@@ -55,7 +55,7 @@ app.config(function($mdThemingProvider) {
     'contrastLightColors': undefined    // could also specify this if default was 'dark'
   });
   $mdThemingProvider.theme('default')
-    .primaryPalette('amazingPaletteName',{
+    .primaryPalette('charts-on-demand',{
       'default': '400'
     })
 });

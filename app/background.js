@@ -3,13 +3,13 @@
 // It doesn't have any windows which you can see on screen, but we can open
 // window from here.
 
-var app = require('app');
+var app = require('electron').app
 
-var BrowserWindow = require('browser-window');
+var BrowserWindow = require('electron').BrowserWindow;
 var env = require('./vendor/electron_boilerplate/env_config');
 var devHelper = require('./vendor/electron_boilerplate/dev_helper');
 var windowStateKeeper = require('./vendor/electron_boilerplate/window_state');
-
+var remote = require('electron').remote;
 var mainWindow;
 
 // Preserver of the window size and position between app launches.
@@ -25,6 +25,7 @@ app.on('ready', function () {
         y: mainWindowState.y,
         width: mainWindowState.width,
         height: mainWindowState.height
+        
     });
 
     if (mainWindowState.isMaximized) {
@@ -39,7 +40,7 @@ app.on('ready', function () {
 
     if (env.name !== 'production') {
         devHelper.setDevMenu();
-        mainWindow.openDevTools();
+        //mainWindow.openDevTools();
     }
 
     mainWindow.on('close', function () {
