@@ -4,6 +4,8 @@ var app = require('electron').app
 var Menu = require('menu');
 var BrowserWindow = require('electron').BrowserWindow;
 var dialog = require('electron').dialog;
+var AWS = require('aws-sdk'); 
+var jetpack = require('fs-jetpack');
 
 module.exports.setDevMenu = function () {
     var devMenu = Menu.buildFromTemplate([{
@@ -33,7 +35,30 @@ module.exports.setDevMenu = function () {
         submenu: [{
             label: 'Open',
             click: function () {
-                dialog.showOpenDialog({ properties: [ 'openFile', 'openDirectory', 'multiSelections' ]})
+                var filePath = dialog.showOpenDialog({ properties: [ 'openFile', 'openDirectory' ]});
+                console.log(filePath)
+
+                var uploadFile = jetpack.read(filePath[0]);
+                console.log(uploadFile)
+                
+                  var s3 = new AWS.S3(); 
+
+                   s3.createBucket({Bucket: 'randomBucket45670'}, function() {
+
+                    var params = {Bucket: 'randomBucket45670', Key: 'myKey', Body: uploadFile};
+
+                    s3.putObject(params, function(err, data) {
+
+                        if (err)       
+
+                            console.log(err)     
+
+                        else       console.log("Successfully uploaded data to myBucket/myKey");   
+
+                     });
+
+                  });
+
             }
         },{
             label: 'Save',
