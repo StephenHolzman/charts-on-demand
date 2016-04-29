@@ -1,8 +1,43 @@
 Charts-On-Demand
 ============================
 
-Electron app. This is an experimental project aiming to assist me in creating interactive D3 charts from templates for my blog chartsoncharts.com. Also to pick up Angular and Electron stuff along the way.
+Electron app. This is an experimental project aiming to assist me in creating interactive D3 charts from templates for my blog chartsoncharts.com. Also to pick up Angular and Electron stuff along the way. Everything concerning app goals is pretty fluid for now. Might want to turn it into a general site manager with some extra dataviz features.
 
+Inserting very rough map/plan of the app here for ease of access
+
+/ = link to new ~child page
+/* = link to page in new window
+/% = link to page
+-> = form to fill out
+*- = tool needed on page
+
+/Main Menu
+	/Manage Existing Site
+		/Write a New Post
+			->Set Title
+			->Set Category
+			->Set Tags
+			->Set Date
+			->Set URL
+			->Write Description
+			->Choose Image
+			*-Generate New Post
+		/Edit an Old Post
+			/Launch Editor
+		/Manage Published Posts
+		/Edit About Page
+	/Create New Site
+		->Select a Theme
+		/Write About Page
+		/Setup Hosting
+	/Help
+
+/Post Editor
+	/*Preview Post
+	*-Insert New Chart From Template
+	*-Embed Chart
+	*-Insert Image
+	*-Insert Link
 # License
 
 The MIT License (MIT)
