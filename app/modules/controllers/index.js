@@ -26,10 +26,16 @@ angular.module('app')
       },{
         title: 'Edit an Old Post',
         path: '/editpost'
-      },
-      {
-        title: 'Upload a Chart to AWS S3',
+      },{
+        title: 'Manage Published Posts',
+        path: '/publishposts'
+      },{
+        title: 'Create a New Chart',
         path: '/uploadchart'
-      }
+      },{
+        title: 'Edit an Old Chart',
+        path: '/editchart'
+      },
+
     ];
   });
