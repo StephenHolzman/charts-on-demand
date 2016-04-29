@@ -14,4 +14,22 @@ angular.module('app')
     $scope.openCards = function() {
       $location.path('/cards');
     };
+
+    $scope.openPath = function(somepath) {
+      $location.path(somepath);
+    }
+
+    $scope.taskOptions = [
+      {
+        title: 'Write a New Post',
+        path: '/newpost'
+      },{
+        title: 'Edit an Old Post',
+        path: '/editpost'
+      },
+      {
+        title: 'Upload a Chart to AWS S3',
+        path: '/uploadchart'
+      }
+    ];
   });
