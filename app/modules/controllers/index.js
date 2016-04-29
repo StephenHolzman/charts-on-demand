@@ -7,8 +7,8 @@ angular.module('app')
     $mdToast.show($mdToast.simple({position: 'top'}).content('Welcome Back!'));
 
     // Use location to change page instead of a href in the template
-    $scope.openMemory = function() {
-      $location.path('/memory');
+    $scope.openUploadChart = function() {
+      $location.path('/uploadchart');
     };
 
     $scope.openCards = function() {

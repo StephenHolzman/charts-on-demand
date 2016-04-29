@@ -28,6 +28,11 @@ app.config(['$routeProvider', function($routeProvider) {
     }
   });
 
+  $routeProvider.when('/uploadchart', {
+    templateUrl: _templateBase + '/uploadfile.html',
+    controller: 'memoryController',
+  });
+  
   $routeProvider.otherwise({ redirectTo: '/' });
 
 }]);
