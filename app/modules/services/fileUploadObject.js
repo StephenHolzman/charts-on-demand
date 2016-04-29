@@ -1,2 +1,2 @@
 angular.module('app')
-  .value('score', {points: 0});
+  .value('parameters', {siteDirectory: ""});

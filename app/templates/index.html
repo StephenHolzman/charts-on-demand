@@ -1,6 +1,7 @@
+<h3>Main Menu</h3>
 <form>
 <ul>
-	<li ng-repeat="option in taskOptions" ng-click="openPath(option.path)">
+	<li ng-repeat="option in taskOptions" ng-click="openPath(option.path,option.method)">
 		<center>{{option.title}}</center>
 	</li>
 </ul>
