@@ -3,7 +3,7 @@ Charts-On-Demand
 
 Electron app. This is an experimental project aiming to assist me in creating interactive D3 charts from templates for my blog chartsoncharts.com. Also to pick up Angular and Electron stuff along the way. Everything concerning app goals is pretty fluid for now. Might want to turn it into a general site manager with some extra dataviz features.
 
-Inserting very rough map/plan of the app here for ease of access
+Inserting very rough map/plan of the app here for ease of access, looks better in raw text editor.
 
 / = link to new ~child page
 /* = link to page in new window
