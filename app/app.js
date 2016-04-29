@@ -12,8 +12,18 @@ var index = require('./modules/index');
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
     templateUrl: _templateBase + '/index.html',
-    controller: 'indexController',
+    controller: 'mainMenuController',
   });
+
+  $routeProvider.when('/managesite', {
+    templateUrl: _templateBase + '/managesite.html',
+    controller: 'manageSiteController',
+  }); 
+
+  $routeProvider.when('/editpost', {
+    templateUrl: _templateBase + '/editpost.html',
+    controller: 'postEditorController',
+  }); 
 
   $routeProvider.when('/memory', {
     templateUrl: _templateBase + '/memory.html',
