@@ -1,10 +1,11 @@
 'use strict';
 angular.module('app')
 
-  .controller('manageSiteController', function($scope, $location, $mdToast) {
+  .controller('manageSiteController', function($scope, $location, $mdToast, parameters) {
 
     // Use location to change page instead of a href in the template
-
+    $scope.parameters = parameters;
+    
     $scope.openPath = function(somepath) {
       $location.path(somepath);
     }
