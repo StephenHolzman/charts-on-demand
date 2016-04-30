@@ -18,6 +18,13 @@ var mainWindowState = windowStateKeeper('main', {
     height: 600
 });
 
+var markdownWindow;
+
+var markdownWindowState = windowStateKeeper('markdown',{
+    width: 1000,
+    height: 600
+})
+
 app.on('ready', function () {
 
     mainWindow = new BrowserWindow({
@@ -28,6 +35,15 @@ app.on('ready', function () {
         
     });
 
+    markdownWindow = new BrowserWindow({
+        x: markdownWindowState.x,
+        y: markdownWindowState.y,
+        width: markdownWindowState.width,
+        height: markdownWindowState.height
+
+    });
+
+    markdownWindow.loadUrl('file://' + __dirname + '/app.html')
     if (mainWindowState.isMaximized) {
         mainWindow.maximize();
     }

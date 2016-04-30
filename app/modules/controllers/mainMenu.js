@@ -25,16 +25,16 @@ angular.module('app')
       }else if(method === 'createDirectory'){
           $scope.parameters = parameters;
           $scope.parameters.siteDirectory = dialog.showOpenDialog({ properties: [ 'openDirectory','createDirectory' ]})
-          exec('cd '+$scope.parameters.siteDirectory[0],function(){});
-          console.log('cd '+$scope.parameters.siteDirectory[0])
+          exec('cd ' + $scope.parameters.siteDirectory[0],function(){});
+          console.log('cd ' + $scope.parameters.siteDirectory[0])
           exec('mkdir randomdirect',{cwd:$scope.parameters.siteDirectory[0]},function(){})   
       }
       $location.path(somepath);
 
-
     };
 
     $scope.taskOptions = [
+    
       {
         title: 'Manage Existing Site',
         path: '/managesite',

@@ -38,6 +38,18 @@ Inserting very rough map/plan of the app here for ease of access, looks better i
 	*-Embed Chart
 	*-Insert Image
 	*-Insert Link
+
+
+Take Two on App Structure
+
+//Markdown Editor
+
+
+//Site Preview
+
+
+//
+
 # License
 
 The MIT License (MIT)
